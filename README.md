@@ -36,6 +36,18 @@ To use it in your project either:
 2. Copy the `import/resolver` settings object into the `settings` object in your `.eslintrc.js`
 ***
 
+## Running ESLint Autofix
+First copy the `.eslintignore.project-example` file to your project root directory and rename it to `.eslintignore`.
+Then run the following command in your terminal:
+
+```bash
+npx eslint --fix --ext .js,.vue --ignore-path .eslintignore .
+```
+
+### ESLint Ignore
+The `.eslintignore` file is used to ignore files and directories from being linted. This is useful for ignoring 3rd party or non-project files and directories.
+Be sure to review and update the `.eslintignore` file as needed, depending on your project's structure.
+
 ## Peer Dependencies
 The following are required peer-dependencies for this module to work properly:
 - `eslint@^8.55.0`
