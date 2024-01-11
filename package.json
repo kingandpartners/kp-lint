@@ -1,0 +1,14 @@
+{
+  "name": "eslint-config-kingandpartners",
+  "version": "0.1.0",
+  "description": "Custom ESLint configuration and rules for King & Partners",
+  "main": "index.js",
+  "author": "King & Partners",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^8.55.0",
+    "eslint-import-resolver-webpack": "^0.13.8",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-vue": "^9.18.1"
+  }
+}
