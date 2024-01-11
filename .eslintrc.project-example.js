@@ -3,12 +3,12 @@
  */
 const path = require('path');
 
-// check if the node environment is the production environment,
-// !!* please update based on your environment variables in your root directory *!!
+// Check if the node environment is the production environment
+// !!* Please update based on your environment variables in your root directory *!!
 const isProd = process.env.NODE_ENV === 'production';
-if (isProd) return;
 
-module.exports = isProd ? {} : {
+// Define the ESLint configuration
+const eslintConfig = {
   root: true,
   env: {
     browser: true,
@@ -28,8 +28,11 @@ module.exports = isProd ? {} : {
         }
       }
     },
-  }, // give ESLint context for the Nuxt @ and ~ aliases that we use
+  }, // Give ESLint context for the Nuxt @ and ~ aliases that we use
   extends: [
     'kingandpartners',
   ],
-}; // if not isProd, export the ESLint configuration
+};
+
+// Export the ESLint configuration, or an empty object if in production
+module.exports = isProd ? {} : eslintConfig;

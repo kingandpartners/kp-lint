@@ -28,10 +28,28 @@ To use it in your project either:
 
 1. Create your own `.eslintrc.js` file in your project root directory
 2. Then copy the contents of the `.eslintrc.project-example.js` file
-3. Past in your `.eslintrc.js` file in your project root
+3. Paste in your `.eslintrc.js` file in your project root
 
 ### Suggestion C _(Existing ESLint Configuration)_
 
 1. Copy the `path` variable to the top of your `.eslintrc.js`, if not already present
 2. Copy the `import/resolver` settings object into the `settings` object in your `.eslintrc.js`
+***
+
+## Peer Dependencies
+The following are required peer-dependencies for this module to work properly:
+- `eslint@^8.55.0`
+- `eslint-import-resolver-webpack@^0.13.8`
+- `eslint-plugin-import@^2.29.0`
+- `eslint-plugin-vue@^9.18.1`
+
+### Peer Dependency Installation
+Using NPM
+```bash
+npm install --save-dev eslint@^8.55.0 eslint-import-resolver-webpack@^0.13.8 eslint-plugin-import@^2.29.0 eslint-plugin-vue@^9.18.1
+```
+Using Yarn
+```bash
+yarn add --dev eslint@^8.55.0 eslint-import-resolver-webpack@^0.13.8 eslint-plugin-import@^2.29.0 eslint-plugin-vue@^9.18.1
+```
 ***
