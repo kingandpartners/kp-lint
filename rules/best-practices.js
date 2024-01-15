@@ -13,14 +13,13 @@ module.exports = {
     'no-undef': 0,
 
     /*
-    "no-negated-condition"
-    - Don't warn about negated conditions
+    Ignore negated condition expressions
      */
     'no-negated-condition': 0,
 
     /*
-    "no-else-return"
-    - Allow else if statements
+    Warn about using `else` after a `return` in an `if` statement, as the `else` is unnecessary
+    - Allow `return` in `else if` statements
      */
     'no-else-return': [
       'error',
@@ -43,10 +42,6 @@ module.exports = {
       }
     ],
 
-
-    // --------------------------------------------------------------------
-    // The following are from all-rules
-    // --------------------------------------------------------------------
     /*
     Custom array callback return rules
     - Allow implicitly returning undefined
@@ -257,11 +252,7 @@ module.exports = {
     ],
 
     /*
-    Warn against functions with too many lines
-    - Max of 50 lines
-    - Ignore blank lines
-    - Ignore comments
-    - Ignore immediately invoked function expressions
+    Ignore max lines per function
      */
     'max-lines-per-function': 0,
 
@@ -286,16 +277,6 @@ module.exports = {
     'no-continue': 'error',
 
     /*
-    Warn about using `else` after a `return` in an `if` statement, as the `else` is unnecessary
-    - Allow `return` in `else if` statements
-     */
-    'no-else-return': ['warn',
-      {
-        allowElseIf: true,
-      },
-    ],
-
-    /*
     Disallow empty functions
      */
     'no-empty-function': 'error',
@@ -315,22 +296,6 @@ module.exports = {
       {
         newIsCap: true,
         capIsNew: false,
-      },
-    ],
-
-    /*
-    Warn against functions with too many lines
-    - Max of 50 lines
-    - Ignore blank lines
-    - Ignore comments
-    - Ignore immediately invoked function expressions
-     */
-    'max-lines-per-function': ['off',
-      {
-        max: 50,
-        skipBlankLines: true,
-        skipComments: true,
-        IIFEs: true,
       },
     ],
 
@@ -398,11 +363,6 @@ module.exports = {
     Disallow the use of new lines in strings
      */
     'no-multi-str': 'error',
-
-    /*
-    Ignore negated condition expressions
-     */
-    'no-negated-condition': 0,
 
     /*
     Warn against nested ternary expressions; these are difficult to read and should be avoided, if possible

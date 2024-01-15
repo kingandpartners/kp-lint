@@ -46,7 +46,7 @@ module.exports = {
     'no-constant-binary-expression': 'error',
 
     /*
-    Warn against constant experssions in conditions
+    Warn against constant expressions in conditions
      */
     'no-constant-condition': 'warn',
 
@@ -72,7 +72,7 @@ module.exports = {
     'no-dupe-args': 'error',
 
     /*
-    Disallow uplicate class members
+    Disallow duplicate class members
      */
     'no-dupe-class-members': 'error',
 
@@ -172,7 +172,7 @@ module.exports = {
     'no-unsafe-finally': 'error',
 
     /*
-    Disallow useless backreferences in regular expressions
+    Disallow useless back-references in regular expressions
      */
     'no-useless-backreference': 'error',
 
