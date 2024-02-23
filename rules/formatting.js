@@ -25,11 +25,6 @@ module.exports = {
     'multiline-comment-style': 0,
 
     /*
-    Allow logical assignment shorthand operators
-     */
-    'logical-assignment-operators': ['error', 'except-parens'],
-
-    /*
     Ignore inline comments
      */
     'no-inline-comments': 0,

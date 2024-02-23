@@ -308,10 +308,6 @@ module.exports = {
     'vue/html-closing-bracket-newline': ['warn', {
       'singleline': 'never',
       'multiline': 'always',
-      'selfClosing': {
-        'singleline': 'never',
-        'multiline': 'always',
-      },
     }],
 
     /*
@@ -337,19 +333,6 @@ module.exports = {
     Ignore elements to close themselves or be self-closing
      */
     'vue/html-self-closing': 0,
-
-    /*
-    Disallow multiple attributes on a single line
-    - Only allow one attribute per line in single-line elements (ex: `<div class="container"></div>`)
-    - Allow only one attribute per line in multi-line elements
-     */
-    'vue/max-attributes-per-line': ['error', {
-      'singleline': 1,
-      'multiline': {
-        'max': 1,
-        'allowFirstLine': false,
-      },
-    }],
 
     /*
     Enforce a line break before and after the contents of a multiline element
@@ -413,14 +396,6 @@ module.exports = {
     Enforce shorthand syntax for v-on
      */
     'vue/v-on-style': ['error', 'shorthand'],
-
-    /*
-    Enforce explicit, `v-slot`, syntax for v-slot
-     */
-    'vue/v-slot-style': ['error', {
-      'default': 'v-slot',
-      'named': 'v-slot',
-    }],
 
     // --------------------------------------------------------------------
     // *** Priority C: Recommended (Minimizing Arbitrary Choices and Cognitive Overhead) ***
