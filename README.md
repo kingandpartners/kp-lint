@@ -38,7 +38,21 @@ To use it in your project either:
 
 ## Running ESLint Autofix
 First copy the `.eslintignore.project-example` file to your project root directory and rename it to `.eslintignore`.
+Next, copy the following command into your `package.json` file, under the `scripts` object:
+
+```json
+"lint:fix": "npx eslint --fix --ext .js,.vue --ignore-path .eslintignore ."
+```
+
 Then run the following command in your terminal:
+
+Via Yarn
+```bash
+yarn lint:fix
+```
+
+### Manual Fix
+Without adding the `lint:fix` command into your `package.json`, you can manually
 
 ```bash
 npx eslint --fix --ext .js,.vue --ignore-path .eslintignore .

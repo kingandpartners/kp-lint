@@ -1,10 +1,17 @@
 /**
  * Export the "import" rules.
+ * - These rules relate to ES6 imports.
+ * - Many of these rules are from eslint-plugin-import.
  *
  * @module module.exports
  */
 module.exports = {
   rules: {
+    /*
+    Ignore alphabetical sorting of import declarations within module
+     */
+    'sort-imports': 'error',
+
     /*
     "import/order"
     - Enforce a convention in module import order
