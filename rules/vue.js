@@ -314,9 +314,9 @@ module.exports = {
     Warn about spacing of HTML closing brackets
      */
     'vue/html-closing-bracket-spacing': ['warn', {
-      'startTag': 'always',
-      'endTag': 'always',
-      'selfClosingTag': 'always',
+      'startTag': 'never',
+      'endTag': 'never',
+      'selfClosingTag': 'never',
     }],
 
     /*
